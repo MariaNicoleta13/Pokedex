@@ -1,2 +1,4 @@
 # Pokedex
-simple pokedex app
+### Steps to set up the project:
+npm i
+npm run dev
