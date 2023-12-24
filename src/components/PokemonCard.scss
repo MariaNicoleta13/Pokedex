@@ -1,0 +1,67 @@
+.pokemon-card-container {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+
+  .pokemon-name {
+    font-family: "Kalnia", serif;
+    text-transform: capitalize;
+    font-size: 2rem;
+    margin: 0;
+    color: var(--pokemon-name, #c6facb);
+    cursor: default;
+  }
+
+  img {
+    width: 15em;
+    height: 15em;
+  }
+
+  .types {
+    display: flex;
+    gap: 10px;
+    cursor: default;
+    margin: 1.5rem 0;
+
+    div {
+      background-color: var(--theme-dark, #1e272e);
+      font: 400 1rem "Asap Condensed", sans-serif;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      background: linear-gradient(
+        90deg,
+        #fff 10%,
+        var(--pokemon-gradient, #c6facb) 85.42%
+      );
+      color: var(--background-color, #024d26);
+      text-transform: capitalize;
+    }
+  }
+
+  .moves {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 15px;
+
+    div {
+      background-color: #02231c;
+      font: 400 1rem "Asap Condensed", sans-serif;
+      color: var(--theme-light, #f7f7f7);
+      padding: 1rem;
+      clip-path: polygon(10% 0, 100% 0%, 91% 100%, 0% 100%);
+    }
+    @media only screen and (min-width: 460px) {
+      grid-template-columns: auto auto auto;
+    }
+  }
+  .moves-label {
+    font: 400 1.5rem "Asap Condensed", sans-serif;
+    margin-bottom: 1.5rem;
+    color: var(--theme-light, #f7f7f7);
+    cursor: default;
+  }
+  .error-img {
+    width: min(25rem, 80%);
+  }
+}

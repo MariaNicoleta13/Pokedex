@@ -1,0 +1,39 @@
+.input-container {
+  display: flex;
+  align-items: center;
+  width: 15rem;
+  background-color: var(--theme-dark, #62a468);
+  padding: 0.25em 1em;
+  border-radius: 4rem;
+
+  svg {
+    height: 1.5rem;
+    width: 1.5rem;
+    fill: var(--theme-light, #f7f7f7);
+  }
+
+  input {
+    background: none;
+    border: 0;
+    padding: 0;
+    width: inherit;
+    outline: 0;
+    cursor: pointer;
+    color: var(--theme-light, #f7f7f7);
+    font-family: "Asap Condensed", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+  }
+}
+
+.error-msg {
+  font-family: "Asap Condensed", sans-serif;
+
+  span {
+    color: var(--theme-error, red);
+    text-transform: capitalize;
+    &::after {
+      content: "\00a0 ";
+    }
+  }
+}
