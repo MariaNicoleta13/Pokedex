@@ -2,7 +2,7 @@ import { useState } from "react";
 
 import "./App.scss";
 import PokemonCard from "./components/PokemonCard";
-import { Pokemon } from "./consts";
+import { Pokemon } from "./types";
 import SearchInput from "./components/SearchInput";
 import { pokemonContext } from "./components/context/pokemonContest";
 

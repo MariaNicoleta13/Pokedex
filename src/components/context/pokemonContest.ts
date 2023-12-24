@@ -1,5 +1,5 @@
 import React, { SetStateAction } from "react";
-import { Pokemon } from "../../consts";
+import { Pokemon } from "../../types";
 
 type PokemonContext = {
   pokemon: Pokemon | undefined;

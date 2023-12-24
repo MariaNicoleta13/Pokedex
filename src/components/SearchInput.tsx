@@ -3,7 +3,7 @@ import { pokemonContext } from "./context/pokemonContest";
 import "./SearchInput.scss";
 
 import { SearchIcon } from "./context/icons/SearchIcon";
-import { APIData, PokemonMove, PokemonType } from "../consts";
+import { APIData, PokemonMove, PokemonType } from "../types";
 
 function SearchInput() {
   const { setPokemon, setShouldDisplayPokemon } = useContext(pokemonContext);
