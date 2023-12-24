@@ -1,5 +1,5 @@
 import { useContext, useEffect, useState } from "react";
-import { pokemonContext } from "./context/pokemonContest";
+import { pokemonContext } from "./context/pokemonContext";
 import "./SearchInput.scss";
 
 import { SearchIcon } from "./context/icons/SearchIcon";

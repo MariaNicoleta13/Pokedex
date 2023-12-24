@@ -4,7 +4,7 @@ import "./App.scss";
 import PokemonCard from "./components/PokemonCard";
 import { Pokemon } from "./types";
 import SearchInput from "./components/SearchInput";
-import { pokemonContext } from "./components/context/pokemonContest";
+import { pokemonContext } from "./components/context/pokemonContext";
 
 function App() {
   const [pokemon, setPokemon] = useState<Pokemon | undefined>();

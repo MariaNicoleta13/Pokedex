@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import "./PokemonCard.scss";
-import { pokemonContext } from "./context/pokemonContest";
+import { pokemonContext } from "./context/pokemonContext";
 import NotFoundImg from "../assets/error.png";
 
 function PokemonCard() {
@@ -30,6 +30,7 @@ function PokemonCard() {
           src={NotFoundImg}
           alt="pokemon not found"
           className="error-img"
+          data-testid="error-img"
         ></img>
       )}
     </div>
