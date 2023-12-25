@@ -2,7 +2,7 @@ import { useContext, useEffect, useState } from "react";
 import { pokemonContext } from "./context/pokemonContext";
 import "./SearchInput.scss";
 
-import { SearchIcon } from "./context/icons/SearchIcon";
+import { SearchIcon } from "./icons/SearchIcon";
 import { APIData, PokemonMove, PokemonType } from "../types";
 
 function SearchInput() {
